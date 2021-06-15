@@ -1,0 +1,38 @@
+{
+  "cycle": 60,
+  "notify_url": "https://maker.ifttt.com/trigger/notify/with/key/your_key",
+  "notify_method": "POST",
+  "notify_message": "PS5 available on item_name",
+  "items": [
+    {
+      "name": "zmart.cl",
+      "url": "https://www.zmart.cl/scripts/prodView.asp?idProduct=78812",
+      "selector": "input[type=\"submit\"][name=\"add\"]",
+      "test_name": "not_empty"
+    },
+    {
+      "name": "falabella",
+      "url": "https://www.falabella.com/falabella-cl/product/14483343/PlayStation-5/14483343",
+      "selector": "div[id=\"buttonForCustomers\"]",
+      "test_name": "not_empty"
+    },
+    {
+      "name": "laPolar",
+      "url": "https://www.lapolar.cl/consola-sony-playstation-5/23395401.html",
+      "selector": "button[class*=\"add-to-cart\"]:not([disabled])",
+      "test_name": "not_empty"
+    },
+    {
+      "name": "microplay",
+      "url": "https://www.microplay.cl/producto/consola-ps5-sony/",
+      "selector": "a[class*=\"btn\"][class*=\"btn-submit\"]",
+      "test_name": "not_empty"
+    },
+    {
+      "name": "weplay",
+      "url": "https://www.weplay.cl/consolas/consolasps5.html",
+      "selector": "li[class=\"item\"]",
+      "test_name": "not_empty"
+    }
+  ]
+}
